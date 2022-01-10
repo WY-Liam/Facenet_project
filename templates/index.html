@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<script src="https://use.fontawesome.com/0a38ab8407.js"></script>
+
+<html>
+    <style>
+        body{
+            text-align: center;
+            background-image: url("./static/images/nccu3.jpg");
+            background-attachment: fixed; 
+            background-size: 100% 100%;
+            background-color: rgba(0, 0, 0, .4);
+            background-blend-mode: multiply;
+        }
+        img{
+            padding: 30px;
+        }
+    </style>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Show</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        
+        <h1 style="color:white;">Show</h1>
+        <img src="./static/{{file_name}}" width = "400" height="400" alt="一張圖片" align="middle">
+        <img src="./static/{{file_name_1}}" width = "400" height="400" alt="一張圖片" align="middle">
+        <h3 style="color:white;"> {{idx}}</h3>
+        <script src="" async defer></script>
+        <br>
+        <br>
+        <br>
+        <button onclick="window.location.href='{{ url_for("home") }}'" class="bton">回主頁</button>
+        <p style="color:pink;">本專案僅為學術使用</p>
+        <p style="color:white;">This project is for academic use only</p>
+    </body>
+
+</html>

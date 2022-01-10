@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圖片上傳</title>
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+<div class="w3-content" style="max-width:1500px">
+
+    <!-- Header -->
+    <header class="w3-container w3-xlarge w3-padding-15">
+    </header>
+    <!-- Photo Grid -->
+  <!-- End Page Content -->
+  </div>
+
+<style>
+div.back {
+    position: relative;
+    top: 50px;
+}
+
+body{
+    text-align: center;
+    background-image: url("./static/images/nccu2.jpg");
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, .4);
+    background-blend-mode: multiply;
+}
+</style>
+
+<body>
+    <h1 style="color:white;">上傳區</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" style="margin-top:20px;"/>
+        <input type="submit" value="上傳" class="button-new" style="margin-top:15px;"/>
+    </form>
+    <div class="back">
+        <button onclick="window.location.href='{{ url_for("home") }}'" class="bton">回主頁</button>
+    </div>
+
+</body>
+</html>

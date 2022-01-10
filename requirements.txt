@@ -1,0 +1,10 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+Flask
+gunicorn
+Jinja2
+numpy==1.19.5
+torch==1.10.0+cpu
+torchvision==0.11.1+cpu
+pillow
+facenet-pytorch
+h5py
